@@ -1,0 +1,11 @@
+interface is an blueprint of methods without implementaion
+-----------
+interface Animal{ //what to do but not how to do it 
+    void makeSound(); //abstract method without body
+}
+
+class Dog implements Animal{ //hpw to do
+    public void makeSound(){ //s inetrface defines the rules
+        System.out.println("Woof");
+    }
+}

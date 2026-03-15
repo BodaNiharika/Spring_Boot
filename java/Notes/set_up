@@ -1,0 +1,26 @@
+1. java install and set the path in the env (check java --version)
+2. install maven Apache and set the path(check mvn --version)
+--------------------------
+Install extensions in teh vs code:
+
+Extension Pack for Java
+Spring Boot Extension Pack
+
+These allow:
+✔ Run Spring Boot
+✔ Debug
+✔ Create projects
+------------------------------------
+Go to the spring initialer in the browser -> 
+File	                 Purpose
+--------------------------------------------
+DemoApplication.java    	main class
+pom.xml                   	dependencies
+application.properties  	configuration
+
+---------------------------------------
+Package        	Purpose
+controller	  handles API requests
+service	      business logic
+repository	  database access
+model	      data classes

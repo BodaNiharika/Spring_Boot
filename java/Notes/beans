@@ -1,0 +1,3 @@
+objects managed by the spring are called beans
+-------------
+spring manages them inside  a container called IoC container

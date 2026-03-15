@@ -1,0 +1,80 @@
+Imagine you are building an E-commerce API.
+
+Without Spring Boot you must:
+
+1️⃣ Configure server
+2️⃣ Configure dependencies
+3️⃣ Configure database
+4️⃣ Configure web framework
+-----------------------------------------
+With Spring Boot:
+
+Just write:
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello World";
+    }
+
+}
+
+Run the app → API works.
+----------------------------------
+When Spring Boot runs:
+
+Your Code
+   ↓
+Spring Boot
+   ↓
+Spring Framework
+   ↓
+Embedded Server (Tomcat)
+   ↓
+Application Running
+
+Default server used:
+
+👉 Apache Tomcat
+----------------------
+Spring Boot Architecture (Simple)
+
+Main components:
+
+1️⃣ Controller
+2️⃣ Service
+3️⃣ Repository
+4️⃣ Database
+
+Architecture:
+
+Client (Browser/Postman)
+        ↓
+Controller
+        ↓
+Service
+        ↓
+Repository
+        ↓
+Database
+--------------------------
+example:
+Food Delivery App 🍔
+
+Customer App
+     ↓
+OrderController
+     ↓
+OrderService
+     ↓
+OrderRepository
+     ↓
+Database
+-----------------------
+
+this framework automaticalky 
+1. creates objects
+2. manages their lifecycle
+3. injcts dependencies

@@ -1,0 +1,35 @@
+------ the barin of the spring---------
+A dependency is simply a class that another class needs.
+
+example: car needs engine => engine = dependency of car
+
+--------------------------------
+dependency injection
+-----------------------------
+Objects are created and provided by a framework
+instead of creating them manually.
+--------------------------------------
+Before DI:
+
+Car → creates Engine
+---------------------------------------
+After DI:
+
+Spring → creates Engine
+Spring → injects Engine into Car
+
+Developer does not write new Engine().
+------------------
+this framework automaticalky 
+1. creates objects
+2. manages their lifecycle
+3. injcts dependencies
+--------------------------------
+1. Loose Coupling
+Classes are independent.
+
+2. Easy Testing
+You can replace dependencies with mocks.
+
+3. Easy Maintenance
+Changing one component doesn't break the whole system.

@@ -1,0 +1,34 @@
+we will connect the application to the MySQL
+-----------
+why we need a database?->
+Right now, your API returns temporary data.
+If the server restarts, all data is gone.
+---------------
+https://dev.mysql.com/downloads/?utm_source=chatgpt.com
+install  MySQL Installer for Windows
+
+--->tehn set root password   and username and passoword (used in application.properties)
+
+
+after donwload-> mysql --version
+
+oprn and enter (mysql -u root -p) and you will see mysql>
+
+
+creating run cretae database studentdb;
+
+show databases;
+
+you should see studentdb
+
+------------------
+connecting spring boot to mysql 
+----------
+adding to (src/main/resources/application.properties_)
+
+spring.datasource.url=jdbc:mysql://localhost:3306/studentdb
+spring.datasource.username=root
+spring.datasource.password=root123
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true

@@ -1,0 +1,8 @@
+controllers (first backend api) (entry point of the backend)
+---------------
+componenets receive these(get post delete) requests called a controllers
+-------------
+client -> controller -> service -> database
+-> in real world applications teh controller might need to:
+validate data->perform calc-> call DB-> send notifications-> aplly business rules
+--------> so for request handling dev seperate request handling and business logic 

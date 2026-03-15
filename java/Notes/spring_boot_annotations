@@ -1,0 +1,23 @@
+@SpringBootApplication
+@RestController
+@GetMapping
+@PostMapping
+@Service
+@Repository
+-----------
+These are some of the commonly used annotations in Spring Boot. 
+these annotaions are how we tell spring what to do and how to manage our application.
+-------------
+@SpringBootApplication -> start applicarion/ enables auto configuration/ scan packages for components
+--Start Spring
+Load configuration
+Scan project classes
+Create objects (beans)
+Start server
+--------------
+@SpringBootApplication
+     =
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
+----------------------------------------------

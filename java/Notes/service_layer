@@ -1,0 +1,6 @@
+In real applications we never put business logic in controllers.
+------------------------
+controllers->service->repo->database
+Developers separate request handling and business logic.
+
+--------------service layer-> business logic

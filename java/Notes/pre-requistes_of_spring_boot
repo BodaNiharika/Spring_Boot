@@ -1,0 +1,75 @@
+------------------------
+[java]
+------------------------
+Classes and Objects
+Inheritance & Polymorphism
+Interfaces
+Collections (List, Set, Map)
+Exception Handling
+Multithreading basics
+Lambda expressions (Java 8+)
+------------------------------
+[oops]
+------------------------------
+Encapsulation
+Inheritance
+Abstraction
+Polymorphism
+Dependency Injection concept
+-------------------------------
+[Basic Web Development Concepts]
+-------------------------------
+HTTP methods (GET, POST, PUT, DELETE)
+Client–Server architecture
+Request & Response
+Status codes (200, 404, 500)
+---------------------------------
+[HTML / JSON Basics]
+---------------------------------
+[Build Tools]
+----------------------------------
+Spring Boot projects usually use:
+Apache Maven
+Gradle
+
+These tools manage:
+Dependencies
+Project build
+Packaging
+-----------------------------------
+IDE (Development Environment)
+------------------------------------
+IntelliJ IDEA
+Eclipse IDE
+Visual Studio Code
+-------------------------------------
+[Database Basics]
+--------------------------------------
+Basic knowledge of:
+
+SQL
+Tables
+CRUD operations
+
+Common databases used with Spring Boot:
+
+MySQL
+PostgreSQL
+MongoDB
+-----------------------------------------
+[Version Control]
+-------------------------
+Git 
+Github
+---------------------------
+
+✅ Simple Summary
+
+Skill	Required Level
+Java	Intermediate
+OOP	    Basic–Intermediate
+HTTP	Basic
+JSON	Basic
+SQL	    Basic
+Git	    Basic
+--------------------------------

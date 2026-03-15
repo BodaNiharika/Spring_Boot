@@ -1,0 +1,14 @@
+REPOSITORY layer
+----------------------------
+database access-> (earlier dev use to write lot of DB code manually using JDBC)
+(hard to maintain)
+-----------------------------------
+to solve this spring introduced Spring Data JPA
+(it allows us to interact with almost no sql code)
+--------------------------------------
+what is REPOSITORY -> is resposible for data saving/fetching/updating/deleting
+(CRUD-> create read update delete)
+-------------
+add the required dependency in the pom.xml
+---------
+JPA(jakarta persistance api)

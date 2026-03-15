@@ -1,0 +1,14 @@
+1. controller 2. service
+---------
+now model layer -> applications deals with the data
+
+Model-> represents a real-world object with properties
+
+example: student object-> id, name, age, course
+so basically like a class in java
+-----------------
+we connect to a DB like mysql, mongodb, etc to store the data and perform operations like create, read, update, delete (CRUD operations)
+-------------------
+each model class represents a table in the database and each instance of the model class represents a row in the table
+-------------------
+client->controller->service->model
