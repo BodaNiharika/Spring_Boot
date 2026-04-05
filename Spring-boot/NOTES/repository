@@ -1,0 +1,17 @@
+Repository is the layer that talks to database.
+
+We don’t write SQL manually most of the time.
+--------
+WHAT JpaRepository Gives Automatically
+Method	Purpose
+save()	Insert / Update
+findAll()	Get all
+findById()	Get by id
+deleteById()	Delete
+count()	Count rows
+
+----------
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+}
+That’s it.
+No implementation needed. Spring generates everything.
