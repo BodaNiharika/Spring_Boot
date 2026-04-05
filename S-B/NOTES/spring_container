@@ -1,0 +1,17 @@
+Spring Container is like a box that stores all objects (Beans).
+
+It stores objects of:
+
+@Controller
+@Service
+@Repository
+@Component
+@Configuration
+
+These are called Spring Beans.
+
+Spring manages:
+
+Object creation
+Object lifecycle
+Dependency Injection

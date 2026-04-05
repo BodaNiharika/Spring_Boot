@@ -1,0 +1,63 @@
+PROJECT FLOW
+================================================================================
+
+Client (Postman/Browser)
+        ↓  HTTP Request
+   StudentController        <- handles the route (e.g. POST /students)
+        ↓
+   StudentService           <- business logic layer
+        ↓
+   StudentRepository        <- talks to the database (extends JpaRepository)
+        ↓
+   Hibernate (ORM)          <- converts Java <-> SQL automatically
+        ↓
+   MySQL (studentdb)        <- stores/retrieves data from `student` table
+        ↑
+   Student (model)          <- Java class that maps to the DB table
+
+--------------------------------------------------------------------------------
+
+EACH LAYER'S RESPONSIBILITY:
+
+Model      -> Student.java          -> defines data structure (id, name, age)
+                                       maps to the DB table via @Entity
+
+Repository -> StudentRepository.java -> interface, extends JpaRepository
+                                        gives save(), findAll(), findById() for free
+                                        no implementation needed
+
+Service    -> StudentService.java   -> business logic layer
+                                       sits between controller and repository
+
+Controller -> StudentController.java -> receives HTTP requests
+                                        calls service
+                                        returns JSON response
+
+Config     -> application.properties -> DB connection, port, JPA settings
+
+--------------------------------------------------------------------------------
+
+EXAMPLE: POST /students  with {"id":1, "name":"Ravi", "age":21}
+
+1. StudentController.createStudent() receives JSON -> converts to Student object
+2. Calls service.createStudent(student)
+3. Service calls repository.save(student)
+4. Hibernate runs: INSERT INTO student (age, name, id) VALUES (21, 'Ravi', 1)
+5. Record saved in MySQL -> returned as JSON back to client
+
+--------------------------------------------------------------------------------
+
+HIBERNATE LOGS EXPLAINED:
+
+select ... from student              -> GET /students       (findAll)
+select ... from student where id=?   -> GET /students/{id}  (findById)
+insert into student ...              -> POST /students       (save)
+update student set ... where id=?    -> PUT /students/{id}   (save with existing id)
+delete from student where id=?       -> DELETE /students/{id}(deleteById)
+
+? = placeholder filled at runtime (prevents SQL injection)
+
+--------------------------------------------------------------------------------
+
+DEFAULT PORT: 8080 (set by embedded Tomcat)
+To change: add  server.port=8081  in application.properties

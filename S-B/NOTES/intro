@@ -1,0 +1,71 @@
+-> creates objects for us
+-> reduces code
+--------------------------------------------------------------------------------
+analogy-> i need a car-> spring directly creates engine, connect wheets, injects fuel
+
+1. Spring Core (Foundation)
+IoC (Inversion of Control)
+Dependency Injection (DI)
+Beans
+Application Context
+
+2. Spring Boot (Most Important 🔥)
+Auto configuration
+Embedded server
+Production-ready apps
+
+3. Spring MVC
+Build web applications
+REST APIs
+
+4. Spring Data JPA
+Database operations
+No SQL boilerplate
+
+5. Spring Security
+Authentication & Authorization
+
+6. Spring AOP
+Logging, transactions
+----------------------------------------------------------------------------------------
+main() method
+     ↓
+SpringApplication.run()
+     ↓
+Spring Container starts
+     ↓
+Component Scan
+     ↓
+Find @Controller @Service @Repository
+     ↓
+Create Beans
+     ↓
+Dependency Injection
+     ↓
+Start Tomcat Server
+     ↓
+Application Ready
+-----------------------------------------------------------------------------
+Spring Start
+    ↓
+Bean Created
+    ↓
+Dependency Injected
+    ↓
+Bean Initialized
+    ↓
+Bean Ready to Use
+    ↓
+Application Running
+    ↓
+Application Stops
+    ↓
+Bean Destroyed
+
+---------------------------------------
+
+Controller	Handles HTTP requests
+Service	Business logic
+Repository	Database operations
+Model	Data object
+Database	Data storage

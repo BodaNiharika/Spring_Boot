@@ -1,0 +1,21 @@
+Annotation	Purpose
+@RestController	REST API class
+@RequestMapping	Base URL
+@GetMapping	GET API
+@PostMapping	POST API
+@PutMapping	UPDATE
+@DeleteMapping	DELETE
+@PathVariable	Value from URL
+@RequestParam	Query parameter
+@RequestBody	JSON → Java Object
+-
+Annotation	Example
+@RestController	Class
+@RequestMapping	/users
+@GetMapping	GET
+@PostMapping	POST
+@PutMapping	UPDATE
+@DeleteMapping	DELETE
+@PathVariable	/users/{id}
+@RequestParam	?name=abc
+@RequestBody	JSON input

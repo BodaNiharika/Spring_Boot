@@ -1,0 +1,32 @@
+Module	Purpose
+Spring Core	Beans, IoC, DI
+Spring Boot	Application framework
+Spring MVC	REST APIs
+Spring Data JPA	Database
+Spring Security	Login/Auth
+Spring AOP	Logging/Transactions
+Spring Cloud	Microservices
+-
+main() method
+   ↓
+@SpringBootApplication
+   ↓
+SpringApplication.run()
+   ↓
+Create ApplicationContext (IoC Container)
+   ↓
+Component Scan
+   ↓
+Create Beans
+   ↓
+Inject Dependencies
+   ↓
+Load application.properties
+   ↓
+Auto Configuration
+   ↓
+Start Embedded Tomcat
+   ↓
+Deploy Controllers
+   ↓
+Application Ready

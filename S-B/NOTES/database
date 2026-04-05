@@ -1,0 +1,36 @@
+HOW Spring Boot Connects to Database
+
+Spring Boot uses:
+
+Spring Data JPA → Hibernate → Database
+
+Controller → Service → Repository → JPA → Hibernate → Database
+
+application.properties (Database Configuration)
+
+This file tells Spring:
+
+Which database?
+Username?
+Password?
+URL?
+
+-------
+JPA-> java objects to db tables (doen by Hibernate (jpa implementation))
+class->table
+object->row
+field->column
+-------------------------
+Spring + Hibernate will create table automatically:
+
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    age INT
+);
+
+becausue  of spring.jpa.hibernate.ddl-auto=update
+---------------------------------
+-
+@entity-> db table
+\@id-> primary key

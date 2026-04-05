@@ -1,0 +1,66 @@
+Controller should NOT contain business logic
+Service should contain business logic
+
+
+ervice layer contains business logic of the application.
+
+Example Business Logic:
+
+In Student App:
+
+Validate student age
+Check if student already exists
+Calculate grade
+Format name
+Apply rules
+Call multiple repositories
+Transactions
+
+These should be in Service, not Controller.
+
+-----------
+This class is a Service
+Create its object
+Store it in Spring Container
+Manage it
+
+This object is called a Bean.
+---------------
+USING SERVICE IN CONTROLLER -> Dependency Injection
+
+
+-----------------------------
+Service layer usually handles:
+
+Business logic
+Validation
+Calculations
+Transactions
+Calling multiple repositories
+Error handling
+Data processing
+
+Controller should only:
+
+Receive request
+Call service
+Return response
+
+-------
+Service layer handles:
+
+Validation
+Rules
+Conditions
+
+---------------
+Service Layer Levels (Understand This Clearly)
+Level	What You Know
+Level 1	Basic CRUD (you did) ✅
+Level 2	Validation logic
+Level 3	Exception handling
+Level 4	Database integration
+Level 5	Transactions
+Level 6	DTO mapping
+Level 7	Logging
+Level 8	Microservices logic
